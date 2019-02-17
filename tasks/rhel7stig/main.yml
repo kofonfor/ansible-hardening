@@ -88,6 +88,7 @@
 - import_tasks: lsm.yml
 - import_tasks: misc.yml
 - import_tasks: sshd.yml
+  when: openstack_hardening_apply_sshd_rules
 
 - name: Remove the temporary directory
   file:
